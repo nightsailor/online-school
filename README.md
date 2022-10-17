@@ -45,5 +45,5 @@ Features of the application includes :
 <h5 align="center">
 < Happy Contributing />
 <br>
-<a href="https://github.com/nightsailor">Muhammad Talha</a> | © 2021
+<a href="https://github.com/nightsailor">Muhammad Talha</a> | © 2022
 </h5>
