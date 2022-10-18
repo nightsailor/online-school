@@ -11,7 +11,7 @@
 
 - [Introduction](#introduction) - What this project is all about
 - [Upcoming Features](#upcoming-features) - Features to be worked on
-- [Contributing Guide](https://github.com/nightsailor/online-school/blob/main/CONTRIBUTING.md) - How to contribute to the project
+- [Contributing Guide](https://github.com/nightsailor/online-school/blob/master/CONTRIBUTING.md) - How to contribute to the project
 
 
 ## <a name="introduction">📌 Introduction</a>
@@ -35,15 +35,15 @@ Features of the application includes :
 - Take a look at the Existing [Issues](https://github.com/nightsailor/online-school/issues) or create your own Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
 - Fork the Repo and create a Branch for any Issue that you are working upon.
-- Read the [Code of Conduct](https://github.com/nightsailor/online-school/blob/main/CODE_OF_CONDUCT.md)
+- Read the [Code of Conduct](https://github.com/nightsailor/online-school/blob/master/CODE_OF_CONDUCT.md)
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what your contribution is all about.
-- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/nightsailor/online-school/blob/main/CONTRIBUTING.md) for a detailed explanation.
+- Having difficulty in contributing? Read the [Contribution Guide](https://github.com/nightsailor/online-school/blob/master/CONTRIBUTING.md) for a detailed explanation.
 
 
 <br>
 <h5 align="center">
 < Happy Contributing />
 <br>
-<a href="https://github.com/nightsailor">Muhammad Talha</a> | © 2021
+<a href="https://github.com/nightsailor">Muhammad Talha</a> | © 2022
 </h5>
