@@ -122,6 +122,13 @@ class TeacherDashboard extends Component {
       submit: 'Go somewhere',
       to: ''
     };
+    const card5 = {
+        bgcolor: '#C38D9E', //41B3A3
+        title: 'Tests',
+        desc: 'All Current and Previous tests',
+        submit: 'View All',
+        to: '/tests'
+      };
     return (
       <Dashboard>
         <DashboardWrapper>
@@ -136,7 +143,7 @@ class TeacherDashboard extends Component {
             <Cards {...card3} />
           </DashboardTop>
           <DashboardBottom>
-            <Cards {...card4} bgcolor="#41B3A3"/>
+            <Cards {...card5} bgcolor="#41B3A3"/>
             <Cards {...card4} />
             <Cards {...card4} bgcolor="#85CDCA"/>
           </DashboardBottom>

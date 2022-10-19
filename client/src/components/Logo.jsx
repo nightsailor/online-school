@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-import logo from '../logo.png'
+import logo from '../logo2.png'
 
 const Wrapper = styled.a.attrs({
     className: 'navbar-brand',
@@ -12,11 +12,11 @@ const Wrapper = styled.a.attrs({
 class Logo extends Component {
     render() {
         return (
-            <Wrapper href="https://github.com/talha8045">
+            <Wrapper href="https://github.com/nightsailor">
                 <img 
                 src={logo} 
                 width="70" 
-                alt="https://github.com/talha8045" />
+                alt="https://github.com/nightsailor" />
             </Wrapper>
         )
     }

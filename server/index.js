@@ -7,7 +7,7 @@ const quizRouter = require("./routes/quiz-router");
 const questionRouter = require("./routes/question-router");
 
 const app = express()
-const apiPort = 3000
+const apiPort = 5000
 
 app.use(express.json());
 app.use(morgan("common"));
