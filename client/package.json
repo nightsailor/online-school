@@ -40,8 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "resolutions": {
-    "react-scripts/eslint-webpack-plugin": "2.3.0"
-  },
-  "proxy": "http://localhost:3000/api"
+  "proxy": "http://localhost:5000/api"
 }
