@@ -9,7 +9,8 @@ import {
   SignIn,
   SignUp,
   TestInsert,
-  QuestionInsert
+  QuestionInsert,
+  AllTests
 } from "../pages";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -39,6 +40,8 @@ function App() {
             <Route path="/create/test" element={<TestInsert />} />
             
             <Route path="/create/question" element={<QuestionInsert />} />
+
+            <Route path="/tests" element={<AllTests />} />
           </>
         )}
       </Routes>
