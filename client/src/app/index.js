@@ -22,23 +22,23 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/leaderboard" exact><LeaderBoard /></Route>
+        <Route path="/" element={user ? <LeaderBoard /> : <SignIn />} />
 
-        <Route path="/" exact>{user ? <LeaderBoard /> : <SignIn />}</Route>
+        <Route path="/leaderboard" element={<LeaderBoard />} />
 
-        <Route path="/login" exact>{user ? <Navigate to="/" /> : <SignIn />}</Route>
+        <Route path="/login" element={user ? <Navigate to="/" /> : <SignIn />} />
 
-        <Route path="/register" exact>{user ? <Navigate to="/" /> : <SignUp />}</Route>
+        <Route path="/register" element={user ? <Navigate to="/" /> : <SignUp />} />
         
         {user && (
           <>
-            <Route path="/teacher/dashboard" exact><TeacherDashboard /></Route>
+            <Route path="/teacher/dashboard" element={<TeacherDashboard />} />
 
-            <Route path="/student/dashboard" exact><StudentDashboard /></Route>
+            <Route path="/student/dashboard" element={<StudentDashboard />} />
 
-            <Route path="/create/test" exact><TestInsert /></Route>
+            <Route path="/create/test" element={<TestInsert />} />
             
-            <Route path="/create/question" exact><QuestionInsert /></Route>
+            <Route path="/create/question" element={<QuestionInsert />} />
           </>
         )}
       </Routes>
