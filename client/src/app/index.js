@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 
 import {
@@ -21,14 +21,14 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <Switch>
+      <Routes>
         <Route path="/leaderboard" exact><LeaderBoard /></Route>
 
         <Route path="/" exact>{user ? <LeaderBoard /> : <SignIn />}</Route>
 
-        <Route path="/login" exact>{user ? <Redirect to="/" /> : <SignIn />}</Route>
+        <Route path="/login" exact>{user ? <Navigate to="/" /> : <SignIn />}</Route>
 
-        <Route path="/register" exact>{user ? <Redirect to="/" /> : <SignUp />}</Route>
+        <Route path="/register" exact>{user ? <Navigate to="/" /> : <SignUp />}</Route>
         
         {user && (
           <>
@@ -41,7 +41,7 @@ function App() {
             <Route path="/create/question" exact><QuestionInsert /></Route>
           </>
         )}
-      </Switch>
+      </Routes>
     </Router>
   );
 }
