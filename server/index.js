@@ -12,6 +12,10 @@ const apiPort = 5000
 app.use(express.json());
 app.use(morgan("common"));
 
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('../client/build'));
+}
+
 app.use("/api/auth", authRouter);
 app.use("/api/quiz", quizRouter);
 app.use("/api/question", questionRouter);
