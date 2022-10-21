@@ -35,7 +35,7 @@ class Links extends Component {
 
     handleLogout = () => {
         myStorage.removeItem("user");
-        window.location.href = '/login';
+        window.location.href = '/';
     };
 
     render() {

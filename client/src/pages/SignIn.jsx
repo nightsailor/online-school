@@ -148,8 +148,8 @@ class SignIn extends Component {
       window.alert("Login Successful!");
       this.setState({ SigninError: false });
       myStorage.setItem("user", res.data.username);
-      
-      window.location.href = '/teacher/dashboard';
+
+      window.location.href = '/';
     } catch (err) {
       window.alert(err);
       this.setState({ SigninError: true });

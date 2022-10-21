@@ -1,12 +1,12 @@
 import axios from 'axios'
 
-export const loginCall = payload => axios.post(`/auth/login`, payload)
-export const registerCall = payload => axios.post(`/auth/register`, payload)
+export const loginCall = payload => axios.post(`/api/auth/login`, payload)
+export const registerCall = payload => axios.post(`/api/auth/register`, payload)
 
-export const insertQuiz = payload => axios.post(`/quiz/create`, payload)
-export const getAllQuizzes = () => axios.get(`/quiz/quizzes`)
+export const insertQuiz = payload => axios.post(`/api/quiz/create`, payload)
+export const getAllQuizzes = () => axios.get(`/api/quiz/quizzes`)
 
-export const insertQuestion = (id, payload) => axios.post(`/question/create/${id}`, payload)
+export const insertQuestion = (id, payload) => axios.post(`/api/question/create/${id}`, payload)
 
 
 const apis = {
