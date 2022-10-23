@@ -58,19 +58,9 @@ $ cd online-school
     git rebase upstream/main
     ```  
 
-**Step 3. Create a Package.json file and install Dependencies.**
+**Step 3. Install the project dependencies**
 
-- Using npm :
-    ```bash
-    $ npm init
-    ```
-
-- Using yarn : 
-    ```bash
-    $ yarn init
-    ```
-
-Next, we need to install the project dependencies, which are listed in `package.json`
+We need to install the project dependencies, which are listed in `package.json`
 
 - Using npm :
     ```bash
