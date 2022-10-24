@@ -6,7 +6,7 @@ import logo from '../logo2.png'
 const Wrapper = styled.a.attrs({
     className: 'navbar-brand',
 })`
-    padding: 0 2vw;
+    padding-left: 2vw;
 `
 
 class Logo extends Component {

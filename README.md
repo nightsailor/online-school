@@ -1,8 +1,7 @@
 <p align="center">
     <img style="background-color: black" src="https://raw.githubusercontent.com/nightsailor/online-school/master/client/src/logo.png" width="10%">
 </p>
-
-<h2 align="center"> 
+<h2 align="center" style="margin-top: -12px"> 
     Online School
 </h2>
 
@@ -13,6 +12,7 @@
 - [Upcoming Features](#upcoming-features) - Features to be worked on
 - [Contributing Guide](https://github.com/nightsailor/online-school/blob/master/CONTRIBUTING.md) - How to contribute to the project
 - [Contributors](#contributors) - People who contributed to the project
+
 
 ## <a name="introduction">📌 Introduction</a>
 
@@ -39,6 +39,7 @@ Features of the application includes :
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what your contribution is all about.
 - Having difficulty in contributing? Read the [Contribution Guide](https://github.com/nightsailor/online-school/blob/master/CONTRIBUTING.md) for a detailed explanation.
+
 
 ## <a name='contributors'>👥 Contributors</a>
 
