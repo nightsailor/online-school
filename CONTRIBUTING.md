@@ -12,7 +12,7 @@ in case you are stuck:
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
 - [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
-- [Getting started with Git and GitHub](https://iread.ga/series/1/git-and-github)
+- [Getting started with Git and GitHub](https://www.freecodecamp.org/news/git-and-github-for-beginners)
 - [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
 
 
@@ -58,19 +58,9 @@ $ cd online-school
     git rebase upstream/main
     ```  
 
-**Step 3. Create a Package.json file and install Dependencies.**
+**Step 3. Install the project dependencies**
 
-- Using npm :
-    ```bash
-    $ npm init
-    ```
-
-- Using yarn : 
-    ```bash
-    $ yarn init
-    ```
-
-Next, we need to install the project dependencies, which are listed in `package.json`
+We need to install the project dependencies, which are listed in `package.json`
 
 - Using npm :
     ```bash
@@ -143,5 +133,5 @@ You will see the build errors and warnings in the console.
 <h5 align="center">
 < Happy Contributing />
 <br>
-<a href="https://github.com/nightsailor">Muhammad Talha</a> | © 2021
+<a href="https://github.com/nightsailor">Muhammad Talha</a> | © 2022
 </h5>
