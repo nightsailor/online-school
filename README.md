@@ -40,6 +40,10 @@ Features of the application includes :
 - Add Screenshots to help us know what your contribution is all about.
 - Having difficulty in contributing? Read the [Contribution Guide](https://github.com/nightsailor/online-school/blob/master/CONTRIBUTING.md) for a detailed explanation.
 
+## Contributors
+<a href="https://github.com/abel-otegbola/clock-app/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abel-otegbola/clock-app" />
+</a> 
 
 <br>
 <h5 align="center">
