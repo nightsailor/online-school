@@ -1,0 +1,26 @@
+{
+  "name": "online-school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install --force",
+    "install-server": "cd server && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build && npm run install-server",
+    "server": "cd server && npm run start",
+    "develop": "npm run server",
+    "start": "npm run server"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightsailor/online-school.git"
+  },
+  "author": "Muhammad Talha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nightsailor/online-school/issues"
+  },
+  "homepage": "https://github.com/nightsailor/online-school#readme"
+}

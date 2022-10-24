@@ -1,13 +1,13 @@
 const express = require("express");
 const morgan = require("morgan");
 
-const db = require('./db')
+const db = require('./db');
 const authRouter = require("./routes/auth-router");
 const quizRouter = require("./routes/quiz-router");
 const questionRouter = require("./routes/question-router");
 
-const app = express()
-const apiPort = 5000
+const app = express();
+const apiPort = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(morgan("common"));
