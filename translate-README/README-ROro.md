@@ -30,7 +30,7 @@ Features of the application includes :
 * Test tema
 
 
-## <a name='how-to-contribute'>💥 How to Contribute?</a>
+## <a name='how-to-contribute'>💥 Cum să contribui?</a>
 
 - Uită-te la [Problemele](https://github.com/nightsailor/online-school/issues) curente sau crează-ți singur probleme!
 - Înainte de a te apuca să rezolvi o problemă, așteaptă să-ți fie atribuită.
@@ -41,7 +41,7 @@ Features of the application includes :
 - întâmpini probleme încercând să contribui? Citește [Ghidul de contribuție.](https://github.com/nightsailor/online-school/blob/master/CONTRIBUTING.md) pentru o explicație detaliată.
 
 
-## <a name='contributors'>👥 Contributors</a>
+## <a name='contributors'>👥 Contribuitori</a>
 
 </br>
 
