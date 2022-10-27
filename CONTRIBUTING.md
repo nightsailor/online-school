@@ -32,11 +32,11 @@ Below you will find the process and workflow used to review and merge your chang
 - Wait for the Issue to be assigned to you after which you can start working on it.
 - Note : Every change in this project should/must have an associated issue.
 
-![issues](demo/issues.png)
+![issues](.github/demo/issues.png)
 
 **Step 1. Fork the repository from [here](https://github.com/nightsailor/online-school/fork).**
 
-![fork](demo/fork.png)
+![fork](.github/demo/fork.png)
 
 **Step 2. Clone the forked repository into a fresh folder**
 
