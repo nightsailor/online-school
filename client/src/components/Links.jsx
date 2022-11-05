@@ -1,26 +1,45 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import logo from '../logo2.png'
+
+const Wrapper = styled.a.attrs({
+    className: '',
+})`
+    display: flex;
+    align-items: center;
+    height: 50px;
+`
+
+const ButtonHome = styled.p.attrs({})`
+    margin-left: 20px;
+`
 
 const myStorage = window.localStorage;
 
 const Collapse = styled.div.attrs({
-    className: 'collpase navbar-collapse',
+    className: '',
 })`
     display: flex;
     justify-content: end;
 `
 
 const List = styled.div.attrs({
-    className: 'navbar-nav mr-auto',
+    className: '',
 })`
-
-margin-right: 20px;
+    display: flex;
 `
 
 const Item = styled.div.attrs({
-    className: 'collpase navbar-collapse',
-})``
+    className: '',
+})`
+    margin-left: 20px;
+    color: rgb(255 255 255 / 55%);
+
+    &:hover{
+        color: rgb(255 255 255 / 75%);
+    }
+`
 
 class Links extends Component {
     constructor(props) {
@@ -42,9 +61,13 @@ class Links extends Component {
         const user = myStorage.getItem("user");
         return (
             <React.Fragment>
-                <Link to="/" className="navbar-brand">
-                    Online School
-                </Link>
+                <Wrapper href="/">
+                    <img 
+                        style={{height: "inherit"}}
+                        src={logo} 
+                        alt="https://github.com/nightsailor" />
+                    <ButtonHome>Online School</ButtonHome>
+                </Wrapper>
                 <Collapse>
                     <List>
                         {user? (

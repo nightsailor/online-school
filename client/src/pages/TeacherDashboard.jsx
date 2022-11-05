@@ -3,11 +3,11 @@ import api from "../api";
 
 import styled, { css } from "styled-components";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 const Dashboard = styled.div`
-  width: 100vw;
-  height: 87vh;
+  width: 100%;
+  height: calc(100% - 70px);
   // background-color: #f0f2f5;
   display: flex;
   align-items: center;
@@ -57,24 +57,55 @@ const Card = styled.div.attrs({
   className: "card",
 })`
 	margin: 10px;
-  width: 18rem;
+    width: 18rem;
+    border: 1px solid rgba(0,0,0,0.18);
+    border-radius: 0.375rem;
 `;
 
 const CardBody = styled.div.attrs({
   className: "card-body",
-})``;
+})`
+    padding: 16px;
+`;
 
 const Title = styled.h5.attrs({
   className: "card-title",
-})``;
+})`
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 500;
+`;
 
 const Text = styled.p.attrs({
   className: "card-text",
-})``;
+})`
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 16px;
+`;
 
 const Button = styled.a.attrs({
   className: "btn btn-primary",
-})``;
+})`
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    &:hover{
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+`;
 
 class Cards extends Component {
   render() {

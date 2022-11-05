@@ -13,7 +13,7 @@ import {
   AllTests
 } from "../pages";
 
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 const myStorage = window.localStorage;
 
