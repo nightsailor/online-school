@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import api from '../api'
 
 import styled from 'styled-components'
@@ -103,8 +104,8 @@ class QuizInsert extends Component {
                     <Button href={'/quiz/quizid'}>Start Test</Button>
                 </div>
                 </Wrapper2>
-                
-                <CancelButton href={'/teacher/dashboard'}>Go Back</CancelButton>
+
+                <Link to={'/teacher/dashboard'}><CancelButton>Go Back</CancelButton></Link>
             </Wrapper>
         )
     }
