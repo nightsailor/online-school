@@ -5,110 +5,113 @@ import api from '../api'
 import styled from 'styled-components'
 
 const Title = styled.h1.attrs({
-    className: 'h1 mb-3 mx-3',
-})``
+  className: 'h1',
+})`
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+`
 
 const Wrapper = styled.div.attrs({
-    className: 'form-group',
+  className: '',
 })`
-    margin: 0 14px;
+  margin: 0 14px;
+  text-align: center;
 `
 
 const Wrapper2 = styled.div`
-    height: 60vh;
-    overflow-y: scroll;
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  height: 60vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+      display: none;
+  }
 `
 
 const Button = styled.button.attrs({
-    className: `btn btn-primary`,
+  className: `btn btn-primary`,
 })`
-    height: 38px;
+  height: 38px;
 `
 
 const CancelButton = styled.a.attrs({
-    className: `btn btn-danger`,
+  className: `btn btn-danger`,
 })`
-    margin: 3rem 15px 15px 21px;
-    text-align: center;
+  margin: 3rem 15px 15px 21px;
 `
 
 class QuizInsert extends Component {
-    constructor(props) {
-        super(props)
+  constructor(props) {
+    super(props)
 
-        this.state = {
-            quizArray: [],
-        }
+    this.state = {
+      quizArray: [],
     }
+  }
 
-    handleFetchQuizzes = async () => {
-        try {
-            const res = await api.getAllQuizzes();
-            console.log(res.data)
-            
-            this.setState({
-                quizArray: res.data
-            })
-        } catch (err) {
-            window.alert(err);
-        }
+  handleFetchQuizzes = async () => {
+    try {
+      const res = await api.getAllQuizzes();
+      console.log(res.data)
+
+      this.setState({
+        quizArray: res.data
+      })
+    } catch (err) {
+      window.alert(err);
     }
+  }
 
-    componentDidMount(){
-        this.handleFetchQuizzes();
-    }
+  componentDidMount() {
+    this.handleFetchQuizzes();
+  }
 
-    render() {
-        const { quizArray } = this.state
-        console.log(quizArray)
-        return (
-            <Wrapper>
-                <Title>All Tests</Title>
-                <Wrapper2>
-                <div className="shadow d-flex p-3 mb-5 mt-2 mx-3 justify-content-between align-items-center">
-                    <div className="">
-                    <p className="h3" >{quizArray.length != 0 ? quizArray[0].name : ''}</p>
-                    <p className="h3" >
-                        {quizArray.length !== 0 
-                    ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
-                    : ''}
-                    </p>
-                    </div>
-                    <Button href={'/quiz/quizid'}>Start Test</Button>
-                </div>
+  render() {
+    const { quizArray } = this.state
+    console.log(quizArray)
+    return (
+      <Wrapper>
+        <Title>All Tests</Title>
+        <Wrapper2>
+          <div className="card-test-2022">
+            <div className="">
+              <p className="">{quizArray.length != 0 ? quizArray[0].name : ''}</p>
+              <p className="">
+                {quizArray.length !== 0
+                  ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
+                  : ''}
+              </p>
+            </div>
+            <Button href={'/quiz/quizid'}>Start Test</Button>
+          </div>
 
-                <div className="shadow d-flex p-3 mb-5 mx-3 justify-content-between align-items-center">
-                    <div className="">
-                    <p className="h3" >{quizArray.length != 0 ? quizArray[0].name : ''}</p>
-                    <p className="h3" >
-                        {quizArray.length !== 0 
-                    ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
-                    : ''}
-                    </p>
-                    </div>
-                    <Button href={'/quiz/quizid'}>Start Test</Button>
-                </div>
+          <div className="card-test-2022">
+            <div className="">
+              <p className="">{quizArray.length != 0 ? quizArray[0].name : ''}</p>
+              <p className="">
+                {quizArray.length !== 0
+                  ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
+                  : ''}
+              </p>
+            </div>
+            <Button href={'/quiz/quizid'}>Start Test</Button>
+          </div>
 
-                <div className="shadow d-flex p-3 mb-5 mx-3 justify-content-between align-items-center">
-                    <div className="">
-                    <p className="h3" >{quizArray.length != 0 ? quizArray[0].name : ''}</p>
-                    <p className="h3" >
-                        {quizArray.length !== 0 
-                    ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
-                    : ''}
-                    </p>
-                    </div>
-                    <Button href={'/quiz/quizid'}>Start Test</Button>
-                </div>
-                </Wrapper2>
+          <div className="card-test-2022">
+            <div className="">
+              <p className="">{quizArray.length != 0 ? quizArray[0].name : ''}</p>
+              <p className="">
+                {quizArray.length !== 0
+                  ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
+                  : ''}
+              </p>
+            </div>
+            <Button href={'/quiz/quizid'}>Start Test</Button>
+          </div>
+        </Wrapper2>
 
-                <Link to={'/teacher/dashboard'}><CancelButton>Go Back</CancelButton></Link>
-            </Wrapper>
-        )
-    }
+        <Link to={'/teacher/dashboard'}><CancelButton>Go Back</CancelButton></Link>
+      </Wrapper>
+    )
+  }
 }
 
 export default QuizInsert
