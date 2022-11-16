@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 
 import {
@@ -10,7 +10,9 @@ import {
   SignUp,
   TestInsert,
   QuestionInsert,
-  AllTests
+  AllTests,
+  TestView,
+  TestResult
 } from "../pages";
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
@@ -19,9 +21,11 @@ const myStorage = window.localStorage;
 
 function App() {
   const user = myStorage.getItem("user");
+  const location = useLocation();
+  const urlArray = ["/quiz/quizid", "/quiz/quizid/", "/quiz/quizid/username", "/quiz/quizid/username/"];
   return (
-    <Router>
-      <NavBar />
+    <>
+      {!urlArray.includes(location.pathname) && (<NavBar />)}
       <Routes>
         <Route path="/" element={user ? <TeacherDashboard /> : <SignIn />} />
 
@@ -42,10 +46,14 @@ function App() {
             <Route path="/create/question" element={<QuestionInsert />} />
 
             <Route path="/tests" element={<AllTests />} />
+
+            <Route path="/quiz/quizid" element={<TestView />} />
+
+            <Route path="/quiz/quizid/username" element={<TestResult />} />
           </>
         )}
       </Routes>
-    </Router>
+    </>
   );
 }
 

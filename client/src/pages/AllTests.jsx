@@ -71,41 +71,10 @@ class QuizInsert extends Component {
       <Wrapper>
         <Title>All Tests</Title>
         <Wrapper2>
-          <div className="card-test-2022">
-            <div className="">
-              <p className="">{quizArray.length != 0 ? quizArray[0].name : ''}</p>
-              <p className="">
-                {quizArray.length !== 0
-                  ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
-                  : ''}
-              </p>
-            </div>
-            <Button href={'/quiz/quizid'}>Start Test</Button>
-          </div>
-
-          <div className="card-test-2022">
-            <div className="">
-              <p className="">{quizArray.length != 0 ? quizArray[0].name : ''}</p>
-              <p className="">
-                {quizArray.length !== 0
-                  ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
-                  : ''}
-              </p>
-            </div>
-            <Button href={'/quiz/quizid'}>Start Test</Button>
-          </div>
-
-          <div className="card-test-2022">
-            <div className="">
-              <p className="">{quizArray.length != 0 ? quizArray[0].name : ''}</p>
-              <p className="">
-                {quizArray.length !== 0
-                  ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
-                  : ''}
-              </p>
-            </div>
-            <Button href={'/quiz/quizid'}>Start Test</Button>
-          </div>
+          <CardTest quizArray={quizArray} />
+          <CardTest quizArray={quizArray} />
+          <CardTest quizArray={quizArray} />
+          <CardTest quizArray={quizArray} />
         </Wrapper2>
 
         <Link to={'/teacher/dashboard'}><CancelButton>Go Back</CancelButton></Link>
@@ -115,3 +84,19 @@ class QuizInsert extends Component {
 }
 
 export default QuizInsert
+
+function CardTest({ quizArray }) {
+  return (
+    <div className="card-test-2022">
+      <div className="">
+        <p className="">{quizArray.length != 0 ? quizArray[0].name : ''}</p>
+        <p className="">
+          {quizArray.length !== 0
+            ? quizArray[0].duration.hours + ":" + quizArray[0].duration.minutes + ":" + quizArray[0].duration.seconds
+            : ''}
+        </p>
+      </div>
+      <Link to={'/quiz/quizid'}><Button>Start Test</Button></Link>
+    </div>
+  )
+}

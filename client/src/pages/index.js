@@ -6,6 +6,8 @@ import SignUp from './SignUp'
 import TestInsert from './TestInsert'
 import QuestionInsert from './QuestionInsert'
 import AllTests from './AllTests'
+import TestView from './TestView'
+import TestResult from './TestResult'
 
 export {
   TeacherDashboard,
@@ -15,6 +17,8 @@ export {
   SignUp,
   TestInsert,
   QuestionInsert,
-  AllTests
+  AllTests,
+  TestView,
+  TestResult
 };
 
